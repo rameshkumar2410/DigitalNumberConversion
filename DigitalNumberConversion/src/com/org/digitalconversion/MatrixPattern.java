@@ -2,12 +2,15 @@ package com.org.digitalconversion;
 
 /**
  * Matrix Pattern for number to digits
+ * 
  * @author Ramesh
  *
  */
 public class MatrixPattern {
-	
+
 	private int[][] matrixPattern;
+
+	boolean flag = false;
 
 	/**
 	 * 
@@ -15,16 +18,15 @@ public class MatrixPattern {
 	 * @return Returns the 3 by 3 matrix for the parameter
 	 */
 	public int[][] getMatrixPattern(int num) {
-		
+
 		matrixPattern = new int[3][3];
-		
 		if (num == 1) {
 			int[][] pattern1 = { { 0, 0, 0 },
 
 					{ 0, 0, 1 },
 
 					{ 0, 0, 1 } };
-
+			flag = true;
 			matrixPattern = pattern1;
 
 		}
@@ -36,7 +38,7 @@ public class MatrixPattern {
 					{ 0, 1, 1 },
 
 					{ 1, 1, 0 } };
-
+			flag = true;
 			matrixPattern = pattern2;
 
 		}
@@ -48,7 +50,7 @@ public class MatrixPattern {
 					{ 0, 1, 1 },
 
 					{ 0, 1, 1 } };
-
+			flag = true;
 			matrixPattern = pattern3;
 
 		}
@@ -60,7 +62,7 @@ public class MatrixPattern {
 					{ 1, 1, 1 },
 
 					{ 0, 0, 1 } };
-
+			flag = true;
 			matrixPattern = pattern4;
 
 		}
@@ -72,7 +74,7 @@ public class MatrixPattern {
 					{ 1, 1, 0 },
 
 					{ 0, 1, 1 } };
-
+			flag = true;
 			matrixPattern = pattern5;
 
 		}
@@ -84,7 +86,7 @@ public class MatrixPattern {
 					{ 1, 1, 0 },
 
 					{ 1, 1, 1 } };
-
+			flag = true;
 			matrixPattern = pattern6;
 
 		}
@@ -96,7 +98,7 @@ public class MatrixPattern {
 					{ 0, 0, 1 },
 
 					{ 0, 0, 1 } };
-
+			flag = true;
 			matrixPattern = pattern7;
 
 		}
@@ -108,7 +110,7 @@ public class MatrixPattern {
 					{ 1, 1, 1 },
 
 					{ 1, 1, 1 } };
-
+			flag = true;
 			matrixPattern = pattern8;
 
 		}
@@ -120,7 +122,7 @@ public class MatrixPattern {
 					{ 1, 1, 1 },
 
 					{ 0, 1, 1 } };
-
+			flag = true;
 			matrixPattern = pattern9;
 
 		}
@@ -132,12 +134,16 @@ public class MatrixPattern {
 					{ 1, 0, 1 },
 
 					{ 1, 1, 1 } };
-
+			flag = true;
 			matrixPattern = pattern0;
 
 		}
 
-		return matrixPattern;
+		if (flag) {
+			return matrixPattern;
+		}
+
+		return null;
 
 	}
 

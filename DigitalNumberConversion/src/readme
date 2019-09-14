@@ -1,0 +1,38 @@
+Digital Number Conversion Application
+=====================================
+
+Brief: I have created this application by having three java class in that one is test class.
+
+DigitalNumberConversion is the main class which will have the business logic of 
+converting the number to Digits.
+
+MatrixPattern Class returns the pattern for the given input, I have extended this
+class in DigitalNumberConversion. In case if any pattern need to modify we can just change 
+the pattern class alone thats the reason i separated this class from business logic.
+
+DigitalNumberConversionTest class will handle all the test cases of this application.
+
+All the Null Pointer scenario and double digit character has been handled.
+
+How to execute the Program:
+
+1.Copy the zip file and extract to any of your local directory.
+2.You will see SRC folder which contains all the above mentioned files.
+3.Create a Java project in your IDE and copy the extracted SRC folder inside your Project.(By default SRC will be created when your create a project so delete that src and replace the extracted src folder).
+4.To run the Junit Test case you need to have the Junit jar. Eclipse IDE internally have the Junit Plugin incase if you dont have download the Jnuit jar and add it to the Buildpath.
+5.Once you have the jars then open the DigitalNumberConversionTest class and right click and select run as Junit.
+6.This will cover all the Test case and give the Digital Output as below.
+7.In case if you want to run directly without test case run the DigitalNumberConversion directly and input the digits in console that will provide the output.
+
+Output through Test case:
+========================
+._....._.._....._.._.._.._.._.
+|.|..|._|._||_||_.|_...||_||_|
+|_|..||_.._|..|._||_|..||_|._|
+
+Output Through Scanner:
+=======================
+1234567890
+...._.._....._.._.._.._.._.._.
+..|._|._||_||_.|_...||_||_||.|
+..||_.._|..|._||_|..||_|._||_|
